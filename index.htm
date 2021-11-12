@@ -1,0 +1,264 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Турпутевки, направления, визы, отдых, путешествия. Турагенство "Hit-Tour". Тел.+7(952)961-68-43</title>
+		<meta name="description" content="Турагенство Hit-Tour предлагает услуги по оформлению туристических путевок, маршрутов, виз. Мы Вам очень рады!">
+<style type="text/css">
+.tabs { width: 100%; padding: 0px; margin: 0 auto; }
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: #FFFFFF;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #E0E0E0;
+    cursor: pointer;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: #FFFFFF;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4 { display: block; }
+.logoTitle { text-align:left; margin-left: 70px;}
+h1 {text-align:left;margin-left: 270px;}
+    h1 img {
+        transform: translateY(19%);
+    }
+.div0{display: inline-block; border: 0px solid black;}
+.div1{
+	display: inline-block; 
+	position: absolute;
+	text-align: center;	
+	margin-left: 25px;
+ } 
+.div2{
+	display: none; 
+	//position: absolute;//inherit;
+	text-align: center;
+	margin-left: 150px;
+ }
+body {background: #FFE4B5;}
+
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 3px;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Calibri', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+</style>
+		<script type="text/javascript">
+			function showhide(){
+				var elem = document.querySelector('.id1');
+				if (elem.style.display=='none')
+					elem.style.display='block';	
+				else 
+					elem.style.display='none';
+				}
+			function myJsFunc() {
+ 				   alert("myJsFunc");
+				}
+			window.onload = style;
+			window.onresize = style; 
+			function style(){
+				var $WW_width = document.documentElement.clientWidth; //Ширина экрана
+  				var $WW_height = document.documentElement.clientHeight; //Высота экрана
+				document.getElementById("menu__toggle").checked = false;
+				document.getElementsByClassName('div2')[0].style.display = "inline-block";
+				if ($WW_width<700){
+					document.getElementById('image').src = "jquery/miro2.jpg";
+					document.getElementById('image').style.width = "300px";
+					document.getElementById('h1').style.marginLeft = "130px";
+					document.getElementsByClassName('div2')[0].style.display = "inline-block";
+					document.getElementsByClassName('div1')[0].style.display = "none";
+					}
+				 else {
+					document.getElementById('image').src = "jquery/miro.jpg";
+					document.getElementById('image').style.width = "600px";
+					document.getElementById('h1').style.marginLeft = "270px";
+					document.getElementsByClassName('div2')[0].style.display = "none";
+					document.getElementsByClassName('div1')[0].style.display = "inline-block";
+					}
+			}
+
+		</script>
+	</head>
+
+	<body style="font-family:Calibri">
+	<div class="div0">
+		<p class="logoTitle"> <img src="jquery/miro.jpg" id="image" style="border-radius: 3px;" width="600" height="44" border="1"></p>	
+		<h1 id="h1" vertical-align="middle"><img src="jquery/airplane-flight-in-circle-around-earth.png" width="45" height="45" alt="Лого"><font face="Calibri" color="green">  HIT-TOUR</font></h1>
+	<div class="div2">
+         	    				<br> <label style="color:black;"><u>ЖДЕМ ВАШЕГО ЗВОНКА:</u></label>
+        	    				<br> <a href="tel:79529616843" style="color:black;font-size:large;">+7 (952) 961-68-43</a>
+                    				<br> <a href="viber://add?number=79529616843"><img style="margin-bottom:-10px;" src="Viber.ico" width="23" height="23"></a>
+			 				<a href="whatsapp://send?phone=79529616843"><img style="margin-bottom:-10px;" src="whatsapp.ico" width="23" height="23"></a>
+							<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="margin-bottom:-10px;" src="tg.png" width="23" height="23"></a>
+		    				<p><form action="ring.jsp#modal">
+                     				 <button style="width:150px; background-color:#D2691E; color:#FFFFFF; text-align: center; border-radius: 5px;">ОБРАТНЫЙ ЗВОНОК</button>
+                       				</form>	 </p>
+           	    				 <a href="mailto:inbox@hit-tour.ru" style="color:black;font-size:medium;">
+            	              				 <img style="margin-bottom:-7px;"  src="email.ico" width="23" height="23">inbox@hit-tour.ru</a>
+			
+	</div>	</div>
+	<div class="div1">
+         	    				<br> <label style="color:black;"><u>ЖДЕМ ВАШЕГО ЗВОНКА:</u></label>
+        	    				<br> <a href="tel:79529616843" style="color:black;font-size:large;">+7 (952) 961-68-43</a>
+                    				<br> <a href="viber://add?number=79529616843"><img style="margin-bottom:-10px;" src="Viber.ico" width="23" height="23"></a>
+			 				<a href="whatsapp://send?phone=79529616843"><img style="margin-bottom:-10px;" src="whatsapp.ico" width="23" height="23"></a>
+							<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="margin-bottom:-10px;" src="tg.png" width="23" height="23"></a>
+ 		    				<p><form action="ring.jsp#modal">
+                     				 <button style="width:150px; background-color:#D2691E; color:#FFFFFF; text-align: center; border-radius: 5px;">ОБРАТНЫЙ ЗВОНОК</button>
+                       				</form>	</p> 
+           	    				 <a href="mailto:inbox@hit-tour.ru" style="color:black;font-size:medium;">
+            	              				 <img style="margin-bottom:-7px;" src="email.ico" width="23" height="23">inbox@hit-tour.ru</a>
+			
+	</div>
+	<div class="hamburger-menu">
+  		<input id="menu__toggle" type="checkbox" />
+  		<label class="menu__btn" for="menu__toggle">
+    			<span></span>
+  		</label>
+  		<ul class="menu__box">
+    			<li><a class="menu__item" href="#">Главная</a></li>
+    			<li><a class="menu__item" href="jquery/index2.html">Проекты</a></li>
+    			<li><a class="menu__item" href="#">Команда</a></li>
+    			<li><a class="menu__item" href="#">Блог</a></li>
+    			<li><a class="menu__item" href="#">Контакты</a></li>
+  		</ul>
+	</div>
+
+<div class="tabs">
+    <input type="radio" name="inset" value="" id="tab_1" checked>
+    <label for="tab_1">Вкладка №1</label>
+
+    <input type="radio" name="inset" value="" id="tab_2">
+    <label for="tab_2">Вкладка №2</label>
+
+    <input type="radio" name="inset" value="" id="tab_3">
+    <label for="tab_3">Вкладка №3</label>
+
+    <input type="radio" name="inset" value="" id="tab_4">
+    <label for="tab_4">Вкладка №4</label>
+
+    <div id="txt_1">
+        <p>Произвольное содержимое...</p>
+        <p>Произвольное содержимое...</p>
+        <p>Произвольное содержимое...</p>
+        <p>Произвольное содержимое...</p>
+    </div>
+    <div id="txt_2">
+        <p>Вторая вкладка</p>
+	<a href='jquery/index2.html'>Next</a>
+    </div>
+    <div id="txt_3">
+        <p>Размеры содержимого вкладок</p>
+        <p>могут отличаться по высоте!</p>
+    </div>
+    <div id="txt_4">
+        <img src="jquery/logo.jpg" width="25" height="25" alt="Лого">
+    </div>
+</div>
+		<div>
+			<br><input type="text"></input>
+			<button class="but1" onclick="showhide();">Show/Hide</button>
+			<a href='https://ya.ru'>Яндекс</a>
+			<a href='jquery/index2.html'>Next</a>
+			<a href="javascript:void(0);" onclick="myJsFunc();">Привет!</a>				
+		</div>
+		<br>
+		<div class="id1" style="display:none; border:1px solid black; border-radius:2px; background:#fc2; width:200px;">
+			<p>Text text text 1</p>
+			<p>Text text text 2</p>
+			<p>Text text text 3</p>
+		</div>						
+	</body>
+</html>
