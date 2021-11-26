@@ -1,0 +1,472 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Турпутевки, направления, визы, отдых, путешествия. Турагенство "Hit-Tour". Тел.+7(952)961-68-43</title>
+		<meta name="description" content="Турагенство Hit-Tour предлагает услуги по оформлению туристических путевок, маршрутов, виз. Мы Вам очень рады!">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+<style type="text/css">
+.tabs { width: 100%; padding: 0px; margin: 0 auto; opacity: 0.9;}
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 12px;
+    border: 1px solid #C0C0C0;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.tabs>label {
+    display: inline-block;
+    padding: 7px;
+    margin: 0 -5px -1px 0;
+    text-align: center;
+    color: #666666;
+    border: 1px solid #C0C0C0;
+    background: #E0E0E0;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.tabs>input:checked + label {
+    color: #000000;
+    border: 1px solid #C0C0C0;
+    border-bottom: 1px solid #FFFFFF;
+    background: #FFFFFF;
+}
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4,
+#tab_5:checked ~ #txt_5 { display: block; }
+.logoTitle { text-align:left; margin-left: 70px;}
+h1 {
+	text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;
+}
+.div0 label {
+	text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;
+}
+h1 img {
+  //font: 600 7vmin/7vh cookie, cursive;
+	transform: translateY(19%);
+}
+h2 {text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;}
+h2 img {transform: translateY(19%);}
+a {text-decoration: none;}
+.div0{ display: block; 
+	text-align:center; 
+	border: 0px solid black;}
+.div1{
+	display: none; 
+	position: absolute;
+	text-align: center;	
+	margin-left: 25px;
+ } 
+.div2{
+	display: none; 
+	//position: absolute;//inherit;
+	text-align: center;
+	margin-left: 50px;
+ }
+
+body {
+	background-image: url(back.jpg);
+	background-repeat: no-repeat;
+  	background-position: 50% 50%;
+  	background-attachment: fixed;
+  	background-size: cover;
+	//background-color: #E0FFFF;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+.aboutrus{
+	opacity: 0.9;
+	outline: 2px solid #000;
+	background: #E0FFFF;
+	padding: 5px;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	}
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+  display: flex; /* используем flex для центрирования содержимого */
+  align-items: center;  /* центрируем содержимое кнопки */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 3px;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black; //#616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  z-index: 99;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  border-radius: 3px;
+}
+/* элементы меню */
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Calibri', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.block {width:100px; position: absolute; margin:0 auto; left:0 right:0}
+
+.contact_soc li
+{
+  position: relative;
+   left: -35px;		
+  display:inline-block;
+  text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;
+}
+
+.wrap ol {
+  list-style-position: inside;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 3;
+  list-style-type: decimal;
+  height: 100px;
+}
+</style>
+		<script type="text/javascript">
+			function showhide(){
+				var elem = document.querySelector('.id1');
+				if (elem.style.display=='none')
+					elem.style.display='block';	
+				else 
+					elem.style.display='none';
+				}
+			function myJsFunc() {
+ 				   alert("myJsFunc");
+				}
+			if (document.readyState == 'loading') {
+  				document.addEventListener('DOMContentLoaded', style);
+			} else {
+ 			 	style;
+			}
+			//window.onload = style;
+			window.onresize = style; 
+			function style(){
+				var $WW_width = document.documentElement.clientWidth; //Ширина экрана
+				//alert($WW_width);
+  				//var $WW_height = document.documentElement.clientHeight; //Высота экрана
+				document.getElementById("menu__toggle").checked = false;
+				if ($WW_width<840){
+					//document.getElementById('image').src = "jquery/miro2.jpg";
+					//document.getElementById('image').style.width = "300px";
+					//document.getElementsByClassName('h2').style.marginLeft = "130px";
+					//document.getElementsByClassName('div1')[0].style.display = "none";
+					document.getElementsByClassName('div2')[0].style.display = "inline-block";
+					document.getElementsByClassName('h2')[0].style.display = "none";
+					document.getElementsByClassName('h1')[0].style.display = "block";
+					document.getElementsByClassName('h3_1')[0].style.display = "block";
+					document.getElementsByClassName('h3_2')[0].style.display = "block";
+					document.getElementsByClassName('hamburger-menu')[0].style.display = "block";
+					}
+				 else {
+					//document.getElementById('image').src = "jquery/miro.jpg";
+					//document.getElementById('image').style.width = "600px";
+					//document.getElementsByClassName('h2').style.marginLeft = "100px";
+					document.getElementsByClassName('div2')[0].style.display = "inline-block";
+					//document.getElementsByClassName('div1')[0].style.display = "inline-block";
+					document.getElementsByClassName('h2')[0].style.display = "block";
+					document.getElementsByClassName('h1')[0].style.display = "none";
+					document.getElementsByClassName('h3_1')[0].style.display = "none";
+					document.getElementsByClassName('h3_2')[0].style.display = "none";
+					document.getElementsByClassName('hamburger-menu')[0].style.display = "none";
+					}
+			}
+        function showteztourSearch() {
+            var path = 'https://json.tez-tour.com/static/ats/';
+            var now = new Date();
+            var dateTo = new Date();
+            dateTo.setDate(now.getDate()+7);
+            var monthes = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+            var teztourSearchSettings = {
+                "fromCountryId":[1102],
+                "fromCityId":[345],
+                "toCountryId":1104,
+                "departureDateMin":( now.getDate() < 10 ? "0"+now.getDate() : now.getDate() )+"."+monthes[now.getMonth()]+"."+now.getFullYear(),
+                "departureDateMax":( dateTo.getDate() < 10 ? "0"+dateTo.getDate() : dateTo.getDate() )+"."+monthes[dateTo.getMonth()]+"."+dateTo.getFullYear(),
+                "nightsMin":7,
+                "nightsMax":15,
+                "nightsLimits":[2,20],
+                "adults":2,
+                "adultsLimits":[1,12],
+                "children":0,
+                "childrenLimits":[0,12],
+                "childrenBirthday":[],
+                "priceMin":0,
+                "priceMax":9999,
+                "currency":8390,
+                "findByPrice":true,
+                "tourId":[1285],
+                "hotelClassId":[9006279, 9006280, 9006281],
+                "feedId":[9006288, 9006289],
+                "hotelId":[0],
+                "hotelInStop":false,
+                "noTicketsTo":false,
+                "noTicketsFrom":false,
+                "locale":"ru",
+                "partnerLink":"https://hit-tour.ru/forma.jsp#modal"
+            }
+            var JSON=window.JSON||{};JSON.stringify=JSON.stringify||function(obj){var t=typeof(obj);if(t!="object"||obj===null){if(t=="string")obj='"'+obj+'"';return String(obj);}else{var n,v,json=[],arr=(obj&&obj.constructor==Array);for(n in obj){v=obj[n];t=typeof(v);if(t=="string")v='"'+v+'"';else if(t=="object"&&v!==null)v=JSON.stringify(v);json.push((arr?"":'"'+n+'":')+String(v));}return(arr?"[":"{")+String(json)+(arr?"]":"}");}};var url=path+'search_'+teztourSearchSettings.locale+'.html';return('<iframe id="teztourSearchFrame" width="908" height="464" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" name='+JSON.stringify(teztourSearchSettings)+' src="'+url+'"></iframe>');
+        };
+
+		</script>
+
+	</head>
+
+	<body style="font-family:Calibri">
+	<div class="div0" style="text-align: center;">
+		<br>
+		<!--p class="logoTitle"> <img src="jquery/miro.jpg" id="image" style="border-radius: 3px;" width="600" height="44" border="0"></p-->	
+		<h1 class="h2" style="vertical-align:middle;"><font face="Calibri">Т У Р И С Т И Ч Е С К О Е&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;А Г Е Н Т С Т В О&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="jquery/airplane-flight-in-circle-around-earth.png" width="45" height="45" alt="Лого">&nbsp;&nbsp;HIT-TOUR</font></h1>
+		<h2 class="h3_1" style="vertical-align:middle;"><font face="Calibri">Т У Р И С Т И Ч Е С К О Е</font></h2>
+		<h2 class="h3_2" style="vertical-align:middle;"><font face="Calibri">А Г Е Н Т С Т В О</font></h2>
+		<h2 class="h1" style="vertical-align:middle;"><img src="airplane-flight-in-circle-around-earth.png" width="45" height="45" alt="Лого"><font face="Calibri">&nbsp;&nbsp;HIT-TOUR</font></h2>
+		<div class="div2">
+			<div style="display:inline-block;">
+				<label style="color:black;">ЖДЕМ ВАШЕГО ЗВОНКА</label>
+				<br><a href="tel://+79529616843" style="color:black; font-size:large; "><strong>+7 (952) 961-68-43</strong></a>
+			</div>
+			<div style="display:inline-block; vertical-align:middle; margin: 25px;">
+				<form action="ring.htm#modal">
+					<button style="width:150px; border-radius:5px;">ОБРАТНЫЙ ЗВОНОК</button>
+				</form> 
+			</div>
+			<div class="div3">
+				<a href="viber://add?number=+79529616843"><img style="margin-bottom:-15px;" src="Viber.ico" width="35" height="35"></a>
+				<a href="whatsapp://send?phone=+79529616843"><img style="margin-bottom:-15px;" src="whatsapp.ico" width="35" height="35"></a>
+				<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="margin-bottom:-18px;" src="tg.png" width="40" height="40"></a>
+				<a href="mailto:inbox@hit-tour.ru" style="color:black; font-size:medium; text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;">
+					<img style="margin-bottom:-15px; "src="email.ico" width="35" height="35">inbox@hit-tour.ru</a>	
+			</div>
+		</div>
+	</div>
+	<div class="div1" style="text-align: center;">
+		<br><label style="color:black;">ЖДЕМ ВАШЕГО ЗВОНКА:</label>
+		<br><a href="tel://+79529616843" style="color:black; font-size:large;">+7 (952) 961-68-43</a>
+		<br><a href="viber://add?number=+79529616843"><img style="margin-bottom:-15px;" src="Viber.ico" width="35" height="35"></a>
+		<a href="whatsapp://send?phone=+79529616843"><img style="margin-bottom:-15px;" src="whatsapp.ico" width="35" height="35"></a>
+		<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="margin-bottom:-18px;" src="tg.png" width="40" height="40"></a>
+		<p><form action="ring.htm#modal">
+				 <button style="width:150px; background-color:#D2691E; color:#FFFFFF; border-radius: 5px;">ОБРАТНЫЙ ЗВОНОК</button>
+			</form>
+			<a href="mailto:inbox@hit-tour.ru" style="color:black; font-size:medium;">
+			<img style="margin-bottom:-15px;" src="email.ico" width="35" height="35">inbox@hit-tour.ru</a>  
+		</p> 
+	</div>
+	<div class="hamburger-menu">
+  		<input id="menu__toggle" type="checkbox" />
+  		<label class="menu__btn" for="menu__toggle">
+    			<span></span>
+  		</label>
+  		<ul class="menu__box">
+    			<li><a class="menu__item" href="index.html">Главная</a></li>
+    			<li><a class="menu__item" href="countries/countries.html">Страны</a></li>
+    			<li><a class="menu__item" href="visa.htm#modal">Визы</a></li>
+    			<li><a class="menu__item" href="gettour/gettour.html">Выбор тура</a></li>
+				<li><a class="menu__item" href="aboutus.htm#modal">О нас</a></li>
+				<li><a class="menu__item" href="faq.htm#modal">Вопрос-ответ</a></li>
+				<li><a class="menu__item" href="feedback.htm#modal">Обратная связь</a></li>
+    			<li><a class="menu__item" href="contacts.htm#modal">Контакты</a></li>
+  		</ul>
+	</div>
+<br>
+<div class="aboutrus">
+    <strong>&nbsp;&nbsp;&nbsp;Лето</strong> – прекрасная пора. Для многих из нас это сезон отпусков, когда можно как следует отдохнуть и восстановить силы после года трудовых будней. Конечно, очень хочется, чтобы эти дни стали запоминающимися. Идеальный вариант для этого – организовать поездку на курорт с семьей или друзьями.
+           <br>   
+    <strong>&nbsp;&nbsp;&nbsp;Выезд за границу</strong> подходит не каждому. Для кого-то проблема получить загранпаспорт, кто-то не может летать на самолетах, кого-то пугает порядок получения медицинской помощи по страховке, а кто-то просто патриот и предпочитает отдыхать на отечественных курортах. Причины могут быть разные, но это не значит, что надо лишать себя отпуска.
+            <br>  
+    <strong>&nbsp;&nbsp;&nbsp;Мы живем</strong> в огромной стране богатой на замечательные места для отдыха. По России можно путешествовать всю жизнь и при этом не страдать от однообразия.        
+</div>
+
+<br>
+<div class="tabs">
+    <input type="radio" name="inset" value="" id="tab_1" checked>
+    <label for="tab_1">Страны</label>
+
+    <input type="radio" name="inset" value="" id="tab_2">
+    <label for="tab_2">Визы</label>
+
+    <input type="radio" name="inset" value="" id="tab_3">
+    <label for="tab_3">Выбор тура</label>
+
+    <input type="radio" name="inset" value="" id="tab_4">
+    <label for="tab_4">О нас</label>
+
+    <input type="radio" name="inset" value="" id="tab_5">
+    <label for="tab_5">Контакты</label>
+
+    <div id="txt_1">
+        <p><strong>РОССИЯ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?russia'>Подробнее..</a></p>
+		<img src="countries/russia/rus2.jpg" width="255" height="150">&nbsp;&nbsp;<img src="countries/russia/rus4.jpg" width="112" height="150">&nbsp;&nbsp;<img src="countries/russia/rus3.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/russia/rus1.jpg" width="240" height="150">
+        <p><strong>ТУРЦИЯ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?turkey'>Подробнее..</a></p>
+		<img src="countries/turkey/turk1.jpg" width="115" height="150">&nbsp;&nbsp;<img src="countries/turkey/turk2.jpg" width="225" height="150">&nbsp;&nbsp;<img src="countries/turkey/turk3.jpg" width="185" height="150">&nbsp;&nbsp;<img src="countries/turkey/turk4.jpg" width="255" height="150">
+        <p><strong>ИТАЛИЯ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?italy'>Подробнее..</a></p>
+		<img src="countries/italy/ital1.jpg" width="231" height="150">&nbsp;&nbsp;<img src="countries/italy/ital2.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/italy/ital3.jpg" width="201" height="150">&nbsp;&nbsp;<img src="countries/italy/ital4.jpg" width="229" height="150">
+        <p><strong>ЕГИПЕТ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?egypt'>Подробнее..</a></p>
+		<img src="countries/egypt/egypt1.jpg" width="231" height="150">&nbsp;&nbsp;<img src="countries/egypt/egypt2.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/egypt/egypt3.jpg" width="201" height="150">&nbsp;&nbsp;<img src="countries/egypt/egypt4.jpg" width="229" height="150">
+        <p><strong>ТУНИС</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?tunis'>Подробнее..</a></p>
+		<img src="countries/tunis/tunis1.jpg" width="231" height="150">&nbsp;&nbsp;<img src="countries/tunis/tunis2.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/tunis/tunis3.jpg" width="201" height="150">&nbsp;&nbsp;<img src="countries/tunis/tunis4.jpg" width="229" height="150">
+        <p><strong>ТАЙЛАНД</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?thailand'>Подробнее..</a></p>
+		<img src="countries/thailand/thailand1.jpg" width="231" height="150">&nbsp;&nbsp;<img src="countries/thailand/thailand2.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/thailand/thailand3.jpg" width="201" height="150">&nbsp;&nbsp;<img src="countries/thailand/thailand4.jpg" width="229" height="150">
+        <p><strong>ГРЕЦИЯ</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='countries/index.html?greece'>Подробнее..</a></p>
+		<img src="countries/greece/greece1.jpg" width="231" height="150">&nbsp;&nbsp;<img src="countries/greece/greece2.jpg" width="200" height="150">&nbsp;&nbsp;<img src="countries/greece/greece3.jpg" width="201" height="150">&nbsp;&nbsp;<img src="countries/greece/greece4.jpg" width="229" height="150">
+     </div>
+    <div id="txt_2">
+		<p><strong>Оформление заграничных виз</strong></p>
+		<div class="wrap">
+			<ol>
+				 <li><a href='visa/index.html?bulgaria'>Болгария</a></li>
+				 <li><a href='visa/index.html?vietnam'>Вьетнам</a></li>
+				 <li><a href='visa/index.html?india'>Индия</a></li>
+				 <li><a href='visa/index.html?china'>Китай</a></li>
+				 <li><a href='visa/index.html?singapour'>Сингапур</a></li>
+				 <li><a href='visa/index.html?japan'>Япония</a></li>
+			</ol>
+		</div>
+		<p><strong>Шенгенская зона</strong></p>
+		<div class="wrap">
+			<ol>
+				 <li><a href='visa/index.html?hungary'>Венгрия</a></li>
+				 <li><a href='visa/index.html?germany'>Германия</a></li>
+				 <li><a href='visa/index.html?greece'>Греция</a></li>
+				 <li><a href='visa/index.html?italy'>Италия</a></li>
+				 <li><a href='visa/index.html?spain'>Испания</a></li>
+				 <li><a href='visa/index.html?norway'>Норвегия</a></li>
+				 <li><a href='visa/index.html?poland'>Польша</a></li>
+				 <li><a href='visa/index.html?finland'>Финляндия</a></li>
+				 <li><a href='visa/index.html?france'>Франция</a></li>
+				 <li><a href='visa/index.html?czech'>Чехия</a></li>
+				 <li><a href='visa/index.html?switzerland'>Швейцария</a></li>
+				 <li><a href='visa/index.html?sweden'>Швеция</a></li>
+			</ol>
+		</div>
+
+		<div class="wrap">
+			<a href='visa.htm#modal1'><strong>Вопросы-ответы</strong></a>
+		</div>	
+    </div>
+    <div id="txt_3">
+    	<div id="teztourSearch" style="width:908px; height:464px; margin:0 auto;"><script type="text/javascript">document.write(showteztourSearch());</script></div>
+    </div>
+    <div id="txt_4">
+    <strong>О компании</strong> 
+    <br>
+        Мы предоставляем только качественные услуги, тщательно проверенные и отобранные экспертами агентства «Хит-Тур». Именно поэтому продукт, предлагаемый на рынке под маркой «Хит-Тур», является в глазах потребителей и партнеров синонимом надежности и качества.
+    </div>
+    <div id="txt_5">
+		<strong>Контакты</strong>
+    	    		<br><br> Телефон: <a href="tel://+79529616843" style="color:black;text-decoration: none;font-size:large; "> +7 (952) 961-68-43</a>
+                    <br><br>Соцсети: <a href="viber://add?number=+79529616843"><img style="margin-bottom:-15px;" src="Viber.ico" width="35" height="35"></a>
+					<a href="whatsapp://send?phone=+79529616843"><img style="margin-bottom:-15px;" src="whatsapp.ico" width="35" height="35"></a>
+					<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="margin-bottom:-18px;" src="tg.png" width="40" height="40"></a>
+     	    		<br><br> E-mail: <a href="mailto:inbox@hit-tour.ru" style="color:black;font-size:medium;"> inbox@hit-tour.ru</a>  
+					<br><br><a href='feedback.htm'>Обратная связь</a>
+    </div>
+</div>
+		<div style="display:none;">
+			<br><input type="text"></input>
+			<button class="but1" onclick="showhide();">Show/Hide</button>
+			<a href='https://ya.ru'>Яндекс</a>
+			<a href='jquery/index2.html'>Next</a>
+			<a href="javascript:void(0);" onclick="myJsFunc();">Привет!</a>				
+		</div>
+		<br>
+		<div class="id1" style="display:none; border:1px solid black; border-radius:2px; background:#fc2; width:200px;">
+			<p>Text text text 1</p>
+			<p>Text text text 2</p>
+			<p>Text text text 3</p>
+		</div>						
+
+		<div class="contact_soc">
+			<ul>
+			    <li><h3 style="text-transform: uppercase; left:-100px; font-size:16px;" class="widget-title">Будьте с нами на связи</h3>
+				</li>
+			    <li><a href="skype:+79529616843?call" class="btn btn_skype1" hidefocus="true" style="outline: none;"><img style="margin-bottom:-7px;" src='Skype.ico'></a>
+		            </li>
+			    <!--li><a href="#" class="btn btn_twitter1" hidefocus="true" style="outline: none;"><img style="margin-bottom:-7px;" src='Twitter.ico'></a>
+		            </li-->
+		            <!--li><a href="#" class="btn btn_fb1" hidefocus="true" style="outline: none;"><img style="margin-bottom:-7px;" src='Facebook.ico'></a>
+		            </li-->
+			</ul>
+                        <div>
+				<div class="phone" style="text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;">Телефон: <a href='tel://+79529616843'> <span>+7 (952) 961-68-43</span></a></div>
+		                <div class="mail" style="text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;">Email: <a href="mailto:inbox@hit-tour.ru" hidefocus="true" style="outline: none;">inbox@hit-tour.ru</a></div>
+			</div>	
+       			 <br>
+
+	     </div>
+                     
+   			<div class="iks" style="float:right;">
+            			<a href="https://webmaster.yandex.ru/siteinfo/?site=https://hit-tour.ru"><img width="88" height="31" alt="" border="0" src="https://yandex.ru/cycounter?https://hit-tour.ru&theme=light&lang=ru"/></a>
+        		</div> 
+
+    	<div class="copyright">
+        	<p class="alignleft" style="text-shadow: 1px 1px 3px Grey, 0 0 1em yellow;">© Hit-Tour, Туристическое агентство, copyright 2021</p>
+        </div>
+	</body>
+</html>
